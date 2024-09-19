@@ -1,8 +1,16 @@
+import { Link } from "react-router-dom";
+
 const NavItems = () => (
   <ul className="navList">
-    <li>Home</li>
-    <li>About Us</li>
-    <li>Orders</li>
+    <li>
+      <Link to="/">Home</Link>
+    </li>
+    <li>
+      <Link to="/about">About Us</Link>
+    </li>
+    <li>
+      <Link to="/contact">Contact Us</Link>
+    </li>
     <li>Cart</li>
   </ul>
 );
