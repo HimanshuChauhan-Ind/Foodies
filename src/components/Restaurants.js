@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ResCard from "./ResCard";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Restaurants = () => {
   const [restaurants, setRestaurants] = useState([]);
@@ -34,6 +35,7 @@ const Restaurants = () => {
 
   return (
     <div className="resList">
+      {console.log("Not accessed")}
       {restaurants.map((res) => (
         <ResCard key={res.info.id} data={res} />
       ))}
